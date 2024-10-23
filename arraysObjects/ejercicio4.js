@@ -2,7 +2,7 @@
 
 // 1. Creamos un array de objetos que representan libros
 
-/* const libros = [
+ const libros = [
     {
         titulo: "Cien años de soledad",
         autor: "Gabriel García Márquez",
@@ -33,16 +33,24 @@
         año: 1981,
         genero: "Novela"
     }
-]; */
-
-// 2. Función para encontrar un libro por su ID
+]; 
 
 
 // 3. Función para encontrar un libro por su título (ignorando mayúsculas/minúsculas)
 
+function encontrarPorTitulo(tituloBuscado) {
+    return libros.find(libro => libro.titulo.toLowerCase() === tituloBuscado.toLowerCase());
+}
+
+console.log(encontrarPorTitulo("el principito"));
+
+// 1. Array de objetos (ya está creado)
+
+// 3. Función para encontrar un libro por su título (ignorando mayúsculas/minúsculas)
 
 
 // 4. Función para encontrar el primer libro de un autor específico
+
 
 
 // 5. Función para encontrar el primer libro publicado después de un año específico
